@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Freeee</title>
+<link rel="stylesheet" href="/static/app.css?v=2026.7.3">
+<link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="mark">f</span>reeee</a>
+  <nav>
+    <a href="/pricing">Pricing</a>
+    <a href="/docs">Docs</a>
+    <a href="/status">Status</a>
+    <a href="/transparency">Transparency</a>
+    
+      <a href="/console">Console</a>
+      <a class="ghost" href="/logout">Sign out</a>
+    
+  </nav>
+</header>
+<main>
+
+<h1>Support</h1>
+<p class="lead">One queue. The on-call engineer picks tickets up in order, and if
+you point them at a page they will open it with their own session to see what you
+saw.</p>
+
+
+<div class="panel">
+  <form method="post">
+    <input type="hidden" name="csrf" value="88446a03f2008fec3dd3f78ee58dc12c">
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" name="subject" required maxlength="120">
+    <label for="body">What happened</label>
+    <textarea id="body" name="body" required maxlength="4000"
+      placeholder="What you expected, what you got, and when."></textarea>
+    <label for="reference">Affected page (optional)</label>
+    <input id="reference" type="text" name="reference"
+           placeholder="https://.../console/keys">
+    <p class="muted" style="margin-top:6px">A link to the console page where the
+    problem shows up. The engineer replays it against production before replying.</p>
+    <p style="margin-top:16px"><button type="submit">Submit ticket</button></p>
+  </form>
+</div>
+
+<h2>Your tickets</h2>
+
+<table>
+  <tr><th>#</th><th>Subject</th><th>Affected page</th><th>State</th></tr>
+  
+  <tr>
+    <td class="mono"><a href="/console/support/5208">5208</a></td>
+    <td>node unreachable</td>
+    <td class="mono">—</td>
+    <td><span class="pill warn">open</span>
+        </td>
+  </tr>
+  
+</table>
+
+
+</main>
+<footer>
+  <div>
+    <strong>Freeee</strong> — managed Redis for people who are not going to pay for Redis.
+  </div>
+  <div class="muted">console 2026.7.3 · ap-southeast-tha-1 ·
+    <a href="/docs">docs</a> · <a href="/kb">help</a> ·
+    <a href="/changelog">changelog</a> · <a href="/metrics">metrics</a> ·
+    <a href="/transparency">build transparency</a></div>
+</footer>
+<script src="/static/app.js?v=2026.7.3" defer></script>
+</body>
+</html>

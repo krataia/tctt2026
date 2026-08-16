@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "distro": "Ubuntu 22.04 family",
+  "binary_ranges": [
+    [
+      4194304,
+      268435456
+    ],
+    [
+      93458488360960,
+      96757023244288
+    ]
+  ],
+  "mmap_ranges": [
+    [
+      139637976727552,
+      140737488355328
+    ]
+  ],
+  "HEAP_ADDR_MIN": 140374275596336,
+  "HEAP_ADDR_MAX": 140511714549808,
+  "BINARY_ADDR_MIN": 4194304,
+  "BINARY_ADDR_MAX": 96757023244288,
+  "heap_anchor": 140442995073072,
+  "target_pid": 531232,
+  "target_executable": null,
+  "target_config_file": null,
+  "target_start_time": 1786780569,
+  "mem_allocator": "jemalloc-5.3.0",
+  "redis_version": "8.6.2",
+  "rdb_version": 12,
+  "EXECUTABLE_OFFSET": 24,
+  "ARGV_ARRAY_OFFSET": 32,
+  "major_version": 8,
+  "STREAM_STRUCT_SIZE": 64,
+  "memview_key": "cache:t:local:hui:E",
+  "controlled_key": "cache:t:local:float:018893",
+  "controlled_ptr_offset": 348611,
+  "memview_base_addr": 140442994724421
+}

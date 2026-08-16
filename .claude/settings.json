@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /home/azureuser/Desktop/tctt/.claude/hooks/session-start-skills.py",
+            "timeout": 15,
+            "statusMessage": "Loading TCTT intake skills..."
+          }
+        ]
+      }
+    ]
+  }
+}

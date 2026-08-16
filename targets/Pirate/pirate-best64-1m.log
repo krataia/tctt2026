@@ -1,0 +1,78 @@
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Command line: john --config=/usr/share/john/john.conf --pot=/home/kali/Desktop/tctt/targets/Pirate/pirate.john.pot --session=/home/kali/Desktop/tctt/targets/Pirate/pirate-best64-1m --format=krb5tgs --wordlist=/tmp/pirate-rockyou-top1m.txt --rules=best64 /home/kali/Desktop/tctt/targets/Pirate/a.white_adm.tgs 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 - Hash type: krb5tgs, Kerberos 5 TGS etype 23 (min-len 0, max-len 41 [worst case UTF-8] to 125 [ASCII])
+0:00:00:00 - Algorithm: MD4 HMAC-MD5 RC4
+0:00:00:00 - Will reject candidates longer than 125 bytes
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 512
+0:00:00:00 Proceeding with wordlist mode
+0:00:00:00 - Rules: best64
+0:00:00:00 - Wordlist file: /tmp/pirate-rockyou-top1m.txt
+0:00:00:00 - memory mapping wordlist (8583864 bytes)
+0:00:00:00 - loading wordfile /tmp/pirate-rockyou-top1m.txt into memory (8583864 bytes, max_size=2147483648)
+0:00:00:00 - wordfile had 1000000 lines and required 8000000 bytes for index.
+0:00:00:00 - 79 preprocessed word mangling rules
+0:00:00:00 - No stacked rules
+0:00:00:00 - Rule #2: ':' accepted as ''
+0:00:00:03 - Rule #3: 'r Q' accepted as 'rQ'
+0:00:00:06 - Rule #4: 'u Q' accepted as 'uQ'
+0:00:00:10 - Rule #5: 'T0 Q' accepted as 'T0Q'
+0:00:00:13 - Rule #6: '<* $0' accepted as '<*$0'
+0:00:00:16 - Rule #7: '<* $1' accepted as '<*$1'
+0:00:00:20 - Rule #8: '<* $2' accepted as '<*$2'
+0:00:00:24 - Rule #9: '<* $3' accepted as '<*$3'
+0:00:00:27 - Rule #10: '<* $4' accepted as '<*$4'
+0:00:00:34 - Rule #11: '<* $5' accepted as '<*$5'
+0:00:00:37 - Rule #12: '<* $6' accepted as '<*$6'
+0:00:00:41 - Rule #13: '<* $7' accepted as '<*$7'
+0:00:00:44 - Rule #14: '<* $8' accepted as '<*$8'
+0:00:00:48 - Rule #15: '<* $9' accepted as '<*$9'
+0:00:00:52 - Rule #16: '<- $0 $0' accepted as '<-$0$0'
+0:00:00:56 - Rule #17: '<- $0 $1' accepted as '<-$0$1'
+0:00:01:00 - Rule #18: '<- $0 $2' accepted as '<-$0$2'
+0:00:01:03 - Rule #19: '<- $1 $1' accepted as '<-$1$1'
+0:00:01:08 - Rule #20: '<- $1 $2' accepted as '<-$1$2'
+0:00:01:13 - Rule #21: '<- $1 $3' accepted as '<-$1$3'
+0:00:01:18 - Rule #22: '<- $2 $1' accepted as '<-$2$1'
+0:00:01:23 - Rule #23: '<- $2 $2' accepted as '<-$2$2'
+0:00:01:26 - Rule #24: '<- $2 $3' accepted as '<-$2$3'
+0:00:01:31 - Rule #25: '<- $6 $9' accepted as '<-$6$9'
+0:00:01:37 - Rule #26: '<- $7 $7' accepted as '<-$7$7'
+0:00:01:41 - Rule #27: '<- $8 $8' accepted as '<-$8$8'
+0:00:01:47 - Rule #28: '<- $9 $9' accepted as '<-$9$9'
+0:00:01:50 - Rule #29: '$1 <- $2 $3' accepted as '$1<-$2$3'
+0:00:01:55 - Rule #30: '<* $e' accepted as '<*$e'
+0:00:01:58 - Rule #31: '<* $s' accepted as '<*$s'
+0:00:02:03 - Rule #32: 'oma Q' accepted as 'omaQ'
+0:00:02:07 - Rule #33: '] ] $s' accepted as ']]$s'
+0:00:02:10 - Rule #34: '] ] $a' accepted as ']]$a'
+0:00:02:14 - Rule #35: '] ] $e $r Q' accepted as ']]$e$rQ'
+0:00:02:18 - Rule #36: '] ] $i $e Q' accepted as ']]$i$eQ'
+0:00:02:22 - Rule #37: '] ] ] $o' accepted as ']]]$o'
+0:00:02:27 - Rule #38: '] ] ] $y' accepted as ']]]$y'
+0:00:02:29 - Rule #39: '] ] ] $1 $2 $3 Q' accepted as ']]]$1$2$3Q'
+0:00:02:33 - Rule #40: '] ] ] $m $a $n Q' accepted as ']]]$m$a$nQ'
+0:00:02:36 - Rule #41: '] ] ] $d $o $g Q' accepted as ']]]$d$o$gQ'
+0:00:02:38 - Rule #42: '^1' accepted
+0:00:02:42 - Rule #43: '^e ^h ^t' accepted as '^e^h^t'
+0:00:02:46 - Rule #44: 'o0d Q' accepted as 'o0dQ'
+0:00:02:50 - Rule #45: 'o0m o1a Q' accepted as 'o0mo1aQ'
+0:00:02:53 - Rule #46: 'so0 Q' accepted as 'so0Q'
+0:00:02:55 - Rule #47: 'si1 Q' accepted as 'si1Q'
+0:00:02:56 - Rule #48: 'se3 Q' accepted as 'se3Q'
+0:00:02:58 - Rule #49: '>3 D2' accepted as '>3D2'
+0:00:03:03 - Rule #50: '>5 O22' accepted as '>5O22'
+0:00:03:07 - Rule #51: '>4 D3' accepted as '>4D3'
+0:00:03:11 - Rule #52: '>5 D4' accepted as '>5D4'
+0:00:03:14 - Rule #53: '>5 '5 D3' accepted as '>5'5D3'
+0:00:03:17 - Rule #54: '>5 '5 $1' accepted as '>5'5$1'
+0:00:03:20 - Rule #55: '>1 ]' accepted as '>1]'
+0:00:03:25 - Rule #56: '>2 ] ]' accepted as '>2]]'
+0:00:03:32 - Rule #57: '>3 ] ] ]' accepted as '>3]]]'
+0:00:03:35 - Rule #58: '>3 ] ] ] d' accepted as '>3]]]d'
+0:00:03:38 - Rule #59: '>3 ] ] D1 ]' accepted as '>3]]D1]'
+0:00:03:44 - Rule #60: '>1 +5 ] } } } } '4' accepted as '>1+5]}}}}'4'
+0:00:03:49 - Rule #61: '>2 O02 { { { { { {' accepted as '>2O02{{{{{{'
+0:00:03:53 - Rule #62: '>3 } ] ] {' accepted as '>3}]]{'

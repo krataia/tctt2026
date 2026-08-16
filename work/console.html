@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Console — Freeee</title>
+<link rel="stylesheet" href="/static/app.css?v=2026.7.3">
+<link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="mark">f</span>reeee</a>
+  <nav>
+    <a href="/pricing">Pricing</a>
+    <a href="/docs">Docs</a>
+    <a href="/status">Status</a>
+    <a href="/transparency">Transparency</a>
+    
+      <a href="/console">Console</a>
+      <a class="ghost" href="/logout">Sign out</a>
+    
+  </nav>
+</header>
+<main>
+
+<h1>mycache</h1>
+<p class="lead">Your instance lives on the shared Bangkok node. These credentials
+are scoped to your own key prefix — they will not do anything outside it.</p>
+
+
+<div class="panel">
+  <h3>Connection</h3>
+  <dl class="kv">
+    <dt>Instance</dt><dd>student1066413</dd>
+    <dt>Node</dt><dd>cache-tha-01 (ap-southeast-tha-1)</dd>
+    <dt>Host</dt><dd>207.148.67.116</dd>
+    <dt>Port</dt><dd>6379</dd>
+    <dt>Username</dt><dd>t_student1066413</dd>
+    <dt>Password</dt><dd>kzlN-4ZZGN1lRf1viBY3l8Ve</dd>
+    <dt>Key prefix</dt><dd>cache:t:student1066413:*</dd>
+    <dt>Plan</dt><dd>free — 25 MB / 20 connections</dd>
+  </dl>
+</div>
+
+<h2>Connect</h2>
+<pre>redis-cli -h 207.148.67.116 -p 6379 \
+  --user t_student1066413 --pass 'kzlN-4ZZGN1lRf1viBY3l8Ve' --no-auth-warning
+
+&gt; SET cache:t:student1066413:greeting "sawasdee"
+&gt; GET cache:t:student1066413:greeting</pre>
+
+<div class="notice">Commands outside <code>@read</code>, <code>@write</code> and
+<code>@connection</code> are rejected for tenant users, and so is any key that is
+not under your prefix. If you need something the ACL will not let you do, that is
+a <a href="/console/support">support ticket</a>, not a bug.</div>
+
+<div class="grid two">
+  <div class="panel tight">
+    <h3>Data</h3>
+    <p class="muted">Browse what is currently in your prefix.</p>
+    <p><a class="btn" href="/console/keys">Open key browser</a></p>
+  </div>
+  <div class="panel tight">
+    <h3>Support</h3>
+    <p class="muted">One queue, one on-call engineer, no tiers.</p>
+    <p><a class="btn secondary" href="/console/support">Open a ticket</a></p>
+  </div>
+</div>
+
+
+</main>
+<footer>
+  <div>
+    <strong>Freeee</strong> — managed Redis for people who are not going to pay for Redis.
+  </div>
+  <div class="muted">console 2026.7.3 · ap-southeast-tha-1 ·
+    <a href="/docs">docs</a> · <a href="/kb">help</a> ·
+    <a href="/changelog">changelog</a> · <a href="/metrics">metrics</a> ·
+    <a href="/transparency">build transparency</a></div>
+</footer>
+<script src="/static/app.js?v=2026.7.3" defer></script>
+</body>
+</html>

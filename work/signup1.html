@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create an instance — Freeee</title>
+<link rel="stylesheet" href="/static/app.css?v=2026.7.3">
+<link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="mark">f</span>reeee</a>
+  <nav>
+    <a href="/pricing">Pricing</a>
+    <a href="/docs">Docs</a>
+    <a href="/status">Status</a>
+    <a href="/transparency">Transparency</a>
+    
+      <a href="/login">Sign in</a>
+      <a class="cta" href="/signup">Start free</a>
+    
+  </nav>
+</header>
+<main>
+
+<h1>Create an instance</h1>
+<p class="lead">One instance per account on the free tier. Provisioning takes
+about a second — the node creates your ACL user while you read this.</p>
+
+<div class="panel" style="max-width:460px">
+  <form method="post">
+    <input type="hidden" name="csrf" value="dd086ae8bb2812bb334c069f820e0f03">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required autocomplete="email">
+    <label for="display">Project name</label>
+    <input id="display" type="text" name="display" placeholder="side-project">
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" required minlength="8"
+           autocomplete="new-password">
+    <p style="margin-top:18px"><button type="submit">Create instance</button></p>
+  </form>
+</div>
+<p class="muted">Already have one? <a href="/login">Sign in</a>.</p>
+
+</main>
+<footer>
+  <div>
+    <strong>Freeee</strong> — managed Redis for people who are not going to pay for Redis.
+  </div>
+  <div class="muted">console 2026.7.3 · ap-southeast-tha-1 ·
+    <a href="/docs">docs</a> · <a href="/kb">help</a> ·
+    <a href="/changelog">changelog</a> · <a href="/metrics">metrics</a> ·
+    <a href="/transparency">build transparency</a></div>
+</footer>
+<script src="/static/app.js?v=2026.7.3" defer></script>
+</body>
+</html>

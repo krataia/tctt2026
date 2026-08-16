@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 15 Aug 2026 07:04:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 2231
+Connection: keep-alive
+Cache-Control: private, no-store
+Vary: Cookie
+Set-Cookie: session=eyJhaWQiOjMzNTIsImNzcmYiOiI4ODQ0NmEwM2YyMDA4ZmVjM2RkM2Y3OGVlNThkYzEyYyJ9.aoAPZg.-2g8BE0LIeIoYTquM2a__gTu64I; HttpOnly; Path=/; SameSite=Lax
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+

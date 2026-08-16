@@ -1,0 +1,4 @@
+interface:
+  display_name: "TCTT 2026 Orchestrator"
+  short_description: "Evidence-driven routing for authorized CTF challenges"
+  default_prompt: "Use $tctt-2026-orchestrator to triage this authorized CTF challenge, select one route, and state the next evidence gate."

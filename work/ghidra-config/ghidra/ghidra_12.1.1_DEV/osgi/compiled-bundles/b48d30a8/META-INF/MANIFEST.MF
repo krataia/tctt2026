@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Created-By: 25.0.3 (Debian)
+Tool: Bnd-7.0.0.202310060912
+Bnd-LastModified: 1786768768729
+Import-Package: ghidra.app.decompiler,ghidra.app.plugin.core.osgi,ghidra
+ .app.script,ghidra.program.model.listing,ghidra.util.task,java.lang,jav
+ a.util,org.osgi.framework
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=21))"
+Bundle-SymbolicName: b48d30a8
+Bundle-Version: 1.0
+Bundle-Name: b48d30a8
+Bundle-Activator: GeneratedActivator
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Normalize CTF Prompts to English"
+  short_description: "Preserve CTF evidence while translating intent"
+  default_prompt: "Use $normalizing-ctf-prompts-to-english to prepare an English working brief without changing challenge evidence."

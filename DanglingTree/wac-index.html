@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head>
+    <base href="/">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=1.0.0">
+    <title>Windows Admin Center</title>
+    <style>
+      #sme-splash {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* Highest possible z-index */
+        z-index: 2147483647;
+        background: white;
+        color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      #sme-splash * {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        font-size: 15px;
+        line-height: 20px;
+        vertical-align: baseline !important;
+        text-align: center !important;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-style: normal !important;
+        letter-spacing: 0 !important;
+        font-variant: normal !important;
+        font-weight: normal !important;
+        text-rendering: auto !important;
+        -webkit-font-smoothing: antialiased !important;
+      }
+
+      #sme-splash svg {
+        margin-bottom: 16px;
+        width: 25vw;
+        min-width: 225px;
+        max-width: 350px;
+        fill: #0067b8;
+      }
+
+      #sme-splash h1 {
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      #sme-splash-progress[value] {
+        -webkit-appearance: none;
+        appearance: none;
+        color: #0067b8;
+        margin-bottom: 16px;
+        border: 0;
+        width: 50vw;
+        min-width: 296px;
+        height: 8px;
+        background-color: transparent;
+      }
+
+      #sme-splash-progress::-webkit-progress-bar {
+        background-color: transparent;
+      }
+
+      #sme-splash-progress::-webkit-progress-value {
+        background: #0067b8;
+      }
+
+      #sme-splash-progress::-moz-progress-bar {
+        background: #0067b8;
+      }
+
+      #sme-splash.sme-splash-theme-dark {
+        background: #262626;
+        color: #fff;
+      }
+
+      #sme-splash.sme-splash-theme-dark svg {
+        fill: #004881;
+      }
+    </style>
+  <style>html{font-size:13px;font-family:Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:18px;letter-spacing:0px;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (max-width: 399.98px){html{font-size:12px;font-family:Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:16px;letter-spacing:0px;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;box-sizing:border-box}*,*:before,*:after,a,a:before,a:after{box-sizing:inherit;vertical-align:middle}*:focus,a:focus{outline-style:none}@media (-ms-high-contrast: active){a:hover:not(:disabled):not(.sme-disabled),a:hover:not(:disabled):not(.sme-disabled):after,a:hover:not(:disabled):not(.sme-disabled):before,a:hover:not(:disabled):not(.sme-disabled)+span,a:hover:not(:disabled):not(.sme-disabled)+span:after,a:hover:not(:disabled):not(.sme-disabled)+span:before{background-color:Window!important;color:Highlight!important;border-color:Highlight!important;outline-color:Highlight!important;-ms-high-contrast-adjust:none}}@media (-ms-high-contrast: active){:disabled *,:disabled *:after,:disabled *:before{background-color:Window!important;color:GrayText!important;border-color:GrayText!important;outline-color:GrayText!important;-ms-high-contrast-adjust:none}}progress{display:inline-block;vertical-align:middle}body{inset:0;color:#000;background-color:#fff;position:absolute;padding:0;margin:0}svg:not(:root){overflow:hidden}a{background-color:#0000;cursor:pointer}a,a:link,a:focus,a:hover,a:active,a:visited{text-decoration:none;color:inherit}a.sme-link{cursor:pointer}a.sme-link:not(.sme-link-discrete),a.sme-link:link:not(.sme-link-discrete),a.sme-link:visited:not(.sme-link-discrete){color:#0067b8}a.sme-link,a.sme-link:focus,a.sme-link:hover,a.sme-link:active{text-decoration:underline}@media (forced-colors: active)and (prefers-color-scheme: dark){a.sme-link:not(.sme-link-discrete),a.sme-link:link:not(.sme-link-discrete),a.sme-link:visited:not(.sme-link-discrete){color:#0ff!important;-ms-high-contrast-adjust:none;forced-color-adjust:none}}h1,p{margin:0;padding:0}a,h1,p,span{vertical-align:baseline}h1{font-size:32px;font-family:Segoe UI SemiBold,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:40px;letter-spacing:-.01em;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body,p{font-size:13px;font-family:Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:18px;letter-spacing:0px;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media (max-width: 399.98px){h1{font-size:24px;font-family:Segoe UI SemiBold,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:28px;letter-spacing:-.01em;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body,p{font-size:12px;font-family:Segoe UI,Helvetica Neue,Helvetica,Arial,sans-serif;font-style:normal;line-height:16px;letter-spacing:0px;font-variant:normal;font-weight:400;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}}.sme-layout-inline-block{display:inline-block}.sme-padding-right-none{padding-right:0}</style><link rel="stylesheet" href="styles.113c662bd043f921.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.113c662bd043f921.css"></noscript></head>
+
+  <body>
+    <script>
+      if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <div id="sme-splash">
+      <svg viewBox="0 0 18 18" role="presentation" focusable="false" xmlns:svg="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" data-type="1" aria-labelledby="sme-splash-header">
+        <g>
+          <linearGradient id="e1fd5424-e3e0-4424-a9d1-7106ce30814e" x1="5.993" y1=".381" x2="5.993" y2="15.291" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#b3b2b3"></stop>
+            <stop offset=".375" stop-color="#afaeaf"></stop>
+            <stop offset=".763" stop-color="#a2a2a2"></stop>
+            <stop offset="1" stop-color="#979797"></stop>
+          </linearGradient>
+          <linearGradient id="e8c11bc1-8ee7-4871-89db-9bf449a4fe59" x1="12.098" y1="11.148" x2="12.098" y2="17.619" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#5ea0ef"></stop>
+            <stop offset="1" stop-color="#0078d4"></stop>
+          </linearGradient>
+          <linearGradient id="feefbe4c-6188-45d9-9656-bc24920d0de2" x1="12.109" y1="9.062" x2="12.109" y2="11.148" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3b3b3b"></stop>
+            <stop offset=".389" stop-color="#373737"></stop>
+            <stop offset=".791" stop-color="#2a2a2a"></stop>
+            <stop offset=".997" stop-color="#212121"></stop>
+          </linearGradient>
+          <path d="M10.833 14.785a.535.535 0 0 1-.559.506H1.712a.535.535 0 0 1-.559-.506V.887a.535.535 0 0 1 .559-.506h8.562a.535.535 0 0 1 .559.506z" fill="url(#e1fd5424-e3e0-4424-a9d1-7106ce30814e)"></path>
+          <path d="M2.576 6.755A1.109 1.109 0 0 1 3.628 5.6h4.817A1.109 1.109 0 0 1 9.5 6.755a1.11 1.11 0 0 1-1.052 1.16h-4.82a1.11 1.11 0 0 1-1.052-1.16zm0-3.444a1.109 1.109 0 0 1 1.052-1.159h4.817A1.109 1.109 0 0 1 9.5 3.311a1.11 1.11 0 0 1-1.052 1.16h-4.82a1.11 1.11 0 0 1-1.052-1.16z" fill="#003067"></path>
+          <circle cx="3.93" cy="3.311" r=".778" fill="#50e6ff"></circle>
+          <circle cx="3.93" cy="6.755" r=".778" fill="#50e6ff"></circle>
+          <path d="M7.366 17.619v-5.86a.612.612 0 0 1 .612-.611h8.24a.612.612 0 0 1 .612.611v5.86z" fill="url(#e8c11bc1-8ee7-4871-89db-9bf449a4fe59)"></path>
+          <path d="M14.764 11.148h-.716v-1.032a.334.334 0 0 0-.338-.338h-3.2a.333.333 0 0 0-.337.338v1.032h-.72v-1.032a1.043 1.043 0 0 1 1.054-1.054h3.2a1.043 1.043 0 0 1 1.054 1.054z" fill="url(#feefbe4c-6188-45d9-9656-bc24920d0de2)"></path>
+          <path d="M16.847 13.406H7.366v.456h3.771v.64a.275.275 0 0 0 .274.274h1.508a.275.275 0 0 0 .274-.274v-.64h3.654z" fill="white"></path>
+        </g>
+      </svg>
+      <h1 id="sme-splash-header">Windows Admin Center</h1>
+      <progress id="sme-splash-progress" role="progressbar" max="100" value="0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0" aria-labelledby="sme-splash-message"></progress>
+
+      <p id="sme-splash-message"></p>
+      <div id="sme-splash-error" style="display: none">
+        <p id="sme-splash-error-title" style="font-weight: bold !important"></p>
+        <p id="sme-splash-error-message">
+          <span id="sme-splash-error-message-start"></span>
+          <a id="sme-splash-error-learn-more" target="_blank" class="sme-link sme-layout-inline-block sme-padding-right-none sme-focus-zone" href="https://aka.ms/wac-in-azure-permissions"></a>
+          <span id="sme-splash-error-message-end"></span>
+        </p>
+        <p><span id="sme-splash-error-response-prefix"></span><span id="sme-splash-error-response-message"></span></p>
+      </div>
+    </div>
+    <sme-root style="display: none"></sme-root>
+
+    <script>
+      (function main() {
+        performance.mark('SME:IndexLoaded');
+        var isShellExtension = window.location.pathname.startsWith('/extensions/') || window.location.pathname.startsWith('/idle');
+        if (isShellExtension) {
+          document.getElementById('sme-splash').remove();
+          document.body.querySelector('sme-root').removeAttribute('style');
+          return;
+        }
+        // Get Query Parameters
+        var queryParams = decodeURIComponent(window.location.search.substring(1))
+          .split('&')
+          .reduce(function (prev, current) {
+            var parts = current.split('=');
+            if (parts[0]) {
+              prev[parts[0]] = parts[1];
+            }
+            return prev;
+          }, {});
+
+        // apply theme
+        var theme = queryParams['theme'];
+        if (!theme) {
+          try {
+            theme = localStorage.getItem('msft.sme.shell-assetManager-theme');
+          } catch (e) {
+            theme = undefined;
+            console.warn('Failed to get theme, theme light will be applied. Error: ' + e.toString());
+          }
+        }
+
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = 'light';
+        }
+        var splash = document.getElementById('sme-splash');
+        var progress = document.getElementById('sme-splash-progress');
+        splash.classList.add(`sme-splash-theme-${theme}`);
+        progress.classList.add(`sme-splash-theme-${theme}`);
+
+        // apply locale
+        var storageLocaleSet;
+        if (storageLocaleSet) {
+          try {
+            storageLocaleSet = JSON.parse(localStorage.getItem('localeSet:@msft-sme/shell'));
+          } catch {
+            storageLocaleSet = undefined;
+            console.warn('Failed to get locale set, en-US will be applied. Error: ' + e.toString());
+          }
+        }
+        var localeId = queryParams['locale'] || (storageLocaleSet ? storageLocaleSet.id : 'en-US');
+        // normalize locale
+        var localeParts = localeId.split('-');
+        localeId = `${localeParts[0].toLowerCase()}-${localeParts[0].toUpperCase()}`;
+        /** BEGIN LOCALIZED STRING INJECTION **/
+		var localeStrings = {"cs-CZ":{"initializing":"Spouští se Windows Admin Center...","errorMessageTitle":"Nepovedlo se spustit Windows Admin Center.","errorMessageStart":"Nemáte oprávnění pro přístup k tomuto nástroji. Pokud vám byl nedávno udělen přístup, počkejte několik minut a zkuste to znovu. ","errorLearnMore":"Další informace","errorMessageEnd":".","errorResponsePrefix":"Chyba:"},"de-DE":{"initializing":"Windows Admin Center wird gestartet...","errorMessageTitle":"Windows Admin Center konnte nicht gestartet werden.","errorMessageStart":"Sie sind nicht berechtigt, auf dieses Tool zuzugreifen. Wenn Ihnen kürzlich Zugriff gewährt wurde, warten Sie einige Minuten, und versuchen Sie es noch mal.  ","errorLearnMore":"Weitere Informationen","errorMessageEnd":".","errorResponsePrefix":"Fehler:"},"es-ES":{"initializing":"Iniciando Windows Admin Center...","errorMessageTitle":"No se pudo iniciar Windows Admin Center.","errorMessageStart":"No tiene autorización para acceder a esta herramienta. Si se le ha concedido acceso recientemente, espere unos minutos e inténtelo de nuevo. ","errorLearnMore":"Más información","errorMessageEnd":".","errorResponsePrefix":"Error:"},"fr-FR":{"initializing":"Démarrage de Windows Admin Center...","errorMessageTitle":"Impossible de démarrer Windows Admin Center","errorMessageStart":"Vous n’êtes pas autorisé à accéder à cet outil. Si vous avez récemment reçu l’accès, veuillez patienter quelques minutes et réessayer. ","errorLearnMore":"En savoir plus","errorMessageEnd":".","errorResponsePrefix":"Erreur :"},"hu-HU":{"initializing":"A Windows Admin Center indítása...","errorMessageTitle":"A Windows Admin Center elindítása nem sikerült.","errorMessageStart":"Nem jogosult az eszköz elérésére. Ha nemrég kapott hozzáférést, várjon néhány percet, és próbálkozzon újra. ","errorLearnMore":"További információ","errorMessageEnd":".","errorResponsePrefix":"Hiba:"},"id-ID":{"initializing":"Memulai Windows Admin Center...","errorMessageTitle":"Tidak dapat memulai Windows Admin Center.","errorMessageStart":"Anda tidak diizinkan untuk mengakses alat ini. Jika Anda baru saja diberi akses, tunggu beberapa menit dan coba lagi. ","errorLearnMore":"Pelajari selengkapnya","errorMessageEnd":".","errorResponsePrefix":"Kesalahan:"},"it-IT":{"initializing":"Avvio di Windows Admin Center in corso...","errorMessageTitle":"Non è stato possibile avviare Windows Admin Center.","errorMessageStart":"Non si è autorizzati ad accedere a questo strumento. Se l'accesso è stato concesso di recente, attendere qualche minuto e riprovare. ","errorLearnMore":"Altre informazioni","errorMessageEnd":".","errorResponsePrefix":"Errore:"},"ja-JP":{"initializing":"Windows Admin Center を開始しています...","errorMessageTitle":"Windows Admin Center を開始できませんでした。","errorMessageStart":"このツールにアクセスする権限がありません。最近アクセス権が付与された場合は、数分待ってから、もう一度お試しください。 ","errorLearnMore":"詳細情報","errorMessageEnd":"。","errorResponsePrefix":"エラー:"},"ko-KR":{"initializing":"Windows Admin Center 시작 중...","errorMessageTitle":"Windows Admin Center를 시작할 수 없습니다.","errorMessageStart":"이 도구에 액세스할 수 있는 권한이 없습니다. 최근에 액세스 권한이 부여된 경우 몇 분 후에 다시 시도하세요. ","errorLearnMore":"자세히 알아보기","errorMessageEnd":".","errorResponsePrefix":"오류:"},"nl-NL":{"initializing":"Windows Admin Center opstarten...","errorMessageTitle":"Kan Windows Admin Center niet starten.","errorMessageStart":"U bent niet gemachtigd voor toegang tot dit hulpprogramma. Als u onlangs toegang hebt gekregen, wacht u enkele minuten en probeert u het opnieuw. ","errorLearnMore":"Meer informatie","errorMessageEnd":".","errorResponsePrefix":"Fout:"},"pl-PL":{"initializing":"Trwa uruchamianie aplikacji Windows Admin Center...","errorMessageTitle":"Nie można uruchomić Centrum administracyjnego systemu Windows.","errorMessageStart":"Nie masz uprawnień dostępu do tego narzędzia. Jeśli niedawno udzielono Ci dostępu, poczekaj kilka minut i spróbuj ponownie. ","errorLearnMore":"Dowiedz się więcej","errorMessageEnd":".","errorResponsePrefix":"Błąd:"},"pt-BR":{"initializing":"Iniciando o Windows Admin Center...","errorMessageTitle":"Não foi possível iniciar o Windows Admin Center.","errorMessageStart":"Você não está autorizado a acessar esta ferramenta. Se você recebeu acesso recentemente, aguarde alguns minutos e tente novamente. ","errorLearnMore":"Saiba mais","errorMessageEnd":".","errorResponsePrefix":"Erro:"},"pt-PT":{"initializing":"A iniciar o Windows Admin Center...","errorMessageTitle":"Não foi possível iniciar o Windows Admin Center.","errorMessageStart":"Não tem autorização para aceder a esta ferramenta. Se tiver fornecido o acesso recentemente, aguarde alguns minutos e tente novamente.  ","errorLearnMore":"Saber mais","errorMessageEnd":".","errorResponsePrefix":"Erro:"},"ru-RU":{"initializing":"Windows Admin Center запускается…","errorMessageTitle":"Не удалось запустить Windows Admin Center.","errorMessageStart":"У вас нет прав доступа к этому инструменту. Если вам недавно предоставлен доступ, подождите несколько минут и повторите попытку. ","errorLearnMore":"Подробнее","errorMessageEnd":".","errorResponsePrefix":"Ошибка:"},"sv-SE":{"initializing":"Startar Windows Admin Center...","errorMessageTitle":"Det gick inte att starta Windows Admin Center.","errorMessageStart":"Du har inte behörighet att komma åt det här verktyget. Om du nyligen har fått åtkomst väntar du några minuter och försöker igen. ","errorLearnMore":"Mer information","errorMessageEnd":".","errorResponsePrefix":"Fel:"},"tr-TR":{"initializing":"Windows Admin Center başlatılıyor...","errorMessageTitle":"Windows Admin Center başlatılamadı.","errorMessageStart":"Bu araç için erişim yetkiniz yok. Yakın zamanda erişim izni verildiyseniz lütfen birkaç dakika bekleyin ve yeniden deneyin. ","errorLearnMore":"Daha fazla bilgi edinin","errorMessageEnd":".","errorResponsePrefix":"Hata:"},"zh-CN":{"initializing":"正在启动 Windows Admin Center...","errorMessageTitle":"无法启动 Windows Admin Center。","errorMessageStart":"你无权访问此工具。如果你最近获得访问权限，请等待几分钟，然后重试。 ","errorLearnMore":"了解详细信息","errorMessageEnd":"。","errorResponsePrefix":"错误:"},"zh-TW":{"initializing":"正在啟動 Windows Admin Center...","errorMessageTitle":"無法啟動 Windows Admin Center。","errorMessageStart":"您沒有存取此工具的授權。如果您最近獲得存取權，請稍候幾分鐘後再試。 ","errorLearnMore":"深入了解","errorMessageEnd":"。","errorResponsePrefix":"錯誤:"}};
+		/** END LOCALIZED STRING INJECTION **/
+        var strings = localeStrings[localeId];
+        // localize initial message
+        var messageElement = document.getElementById('sme-splash-message');
+        messageElement.innerText = strings ? strings.initializing : 'Starting Windows Admin Center...';
+        messageElement = document.getElementById('sme-splash-error-title');
+        messageElement.innerText = strings ? strings.errorMessageTitle : "Couldn't start Windows Admin Center.";
+        messageElement = document.getElementById('sme-splash-error-message-start');
+        messageElement.innerText = strings
+          ? strings.errorMessageStart
+          : 'You are not authorized to access this tool. If you were recently given access, please wait a few minutes and try again.';
+        messageElement = document.getElementById('sme-splash-error-message-end');
+        messageElement.innerText = strings ? strings.errorMessageEnd : '.';
+        messageElement = document.getElementById('sme-splash-error-learn-more');
+        messageElement.innerText = strings ? strings.errorLearnMore : 'Learn more';
+        messageElement = document.getElementById('sme-splash-error-response-prefix');
+        messageElement.innerText = strings ? strings.errorResponsePrefix : 'Error:';
+
+        if (window.module) {
+          module = window.module;
+        }
+      })();
+    </script>
+  <script src="runtime.6b241853c7ac1072.js" type="module"></script><script src="polyfills.046f0a30875087cd.js" type="module"></script><script src="main.183c2e929714f343.js" type="module"></script>
+
+<script src="vendor.angular.8b4b2e9376b88229.js" defer></script>
+<script src="vendor.reflect-metadata.ecf94acad7087e57.js" defer></script>
+<script src="vendor.rxjs.6ba89d21ca9e84f4.js" defer></script>
+<script src="vendor.tslib.c53b9231ab4937dc.js" defer></script>
+<script src="vendor.web-vitals.e575eb1fecc271e5.js" defer></script>
+<script src="vendor.zone.js.d765f21aced0ed1e.js" defer></script>
+</body></html>
