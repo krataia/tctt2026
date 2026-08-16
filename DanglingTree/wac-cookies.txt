@@ -1,8 +1,0 @@
-# Netscape HTTP Cookie File
-# http://curl.haxx.se/rfc/cookie_spec.html
-# This is a generated file!  Do not edit.
-
-10.129.8.25	FALSE	/	TRUE		.AspNetCore.Antiforgery.7Eyhia2WOxE	CfDJ8HsozULo80ZBsxvkNAKguokmTODbufVfs-9GOvtnT68utqlN__sC4_sCRjMlidabqIV5PMTCLpwkeDJAF--ns02rRp-OH5cXSKUREf74f6LH_R0tA1RNNrcI0GbKrBQWqrhiX7HwtAZlK50dkWpQ5oA
-10.129.8.25	FALSE	/	TRUE	1786638426	WAC-SESSION	bf3507b9ad12400a99fb321a5b11b48c
-10.129.8.25	FALSE	/	TRUE		XSRF-TOKEN	CfDJ8HsozULo80ZBsxvkNAKguonDzLf6RjOhX1kZk5_YyeT-P7KCRGN5ibi7YuCKGzdyg0tXeiL7QXFIcQQIn-ehDL_Yg1cpjjI2Z_khHR_w73YT6Q1Zn2bQYv-IjGkZZUSzwPcuv1EaL5puYdypHMtoSeMqo8byUEeOcsE8DrvXHJoiRTeOy0FW0K_RsW6CYMyxFw
-10.129.8.25	FALSE	/	TRUE	1786638428	WAC-TOKEN	5wlJGYR6MvrqIpICeBk6ZkihyJfwtx%2BFHRq2e8oFBOo%3D

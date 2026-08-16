@@ -43,6 +43,26 @@ Primary sources for the TCTT 2025 knowledge base, with role and confidence. Fetc
 | S25 | corra_nt Medium | https://medium.com/@corra_nt/write-up-thailand-cyber-top-talent-2025-b4d3148443f5 | General write-up, first-blood notes. |
 | S26 | noonomyen blog | https://blog.noonomyen.com/posts/ctf/thailand-cyber-top-talent-2025-senior-final-writeups/ | Final Red/Blue track challenges; **self-reported Senior 1st "Don't Know Everything" (unverified)**. |
 
+## Write-up sweep (2026-08-16, `tctt-writeup-sweep` swarm workflow — 7 discovery agents + extraction)
+
+Registry of all found write-ups: `writeups-registry.md` (147 rows, 2021–2026, all divisions incl. WTCTT). Key sources added by the sweep (community, **medium/low**):
+
+| # | Source | URL | Role |
+| --- | --- | --- | --- |
+| S27 | k1god blog | https://blog.k1god.com/posts/thailand_cyber_top_talent_2025_online_senior_ctf_writeup | TCTT 2025 Online-Senior network write-up (deep-extracted; `flag{...}` format). |
+| S28 | noonomyen.com (canonical domain of blog.noonomyen.com) | https://noonomyen.com/posts/ctf/ | Senior qualifier write-ups 2023/2024 + final 2025; mirrors of S26. |
+| S29 | Deekit Wiseschu (Medium) | https://medium.com/@deekitwiseschu/thailand-cyber-top-talent-2024-junior-writeup-mobile-security-c01562124cbc | TCTT 2024 Junior Mobile Security (deep-extracted). |
+| S30 | Monkey D Ouy (Medium) | https://monkeydouy.medium.com/thailand-cyber-top-talent-2024-open-qualifier-mobile-security-8226579e8083 | TCTT 2024 Open qualifier Mobile (deep-extracted). |
+| S31 | north1432 (Medium) | https://medium.com/@north1432/my-brief-thailand-cyber-top-talent-2024-writeup-and-review-12e0302ba95e | TCTT 2024 general solved-set (deep-extracted). |
+| S32 | Naruebordhin Pakwan (Medium) | https://medium.com/@naruebordhinp/thailand-cyber-top-talent-2024-senior-qualifier-writeup-network-and-cryptography-tha-ver-e5f633093843 | TCTT 2024 Senior qualifier network/crypto (deep-extracted). |
+| S33 | Stelliona (Medium) | https://st3llina.medium.com/thctt2024-write-up-forensics-74af13f207d0 | TCTT 2024 forensics "Evidence" E01 (deep-extracted). |
+| S34 | Peeraphnt Klinnim / notregenxy (Medium) | https://notregenxy.medium.com/thctt2024-1-write-up-mobile-security-...-0535241e28e1 | THCTT2024 Mobile series #1–#4, beginner-friendly (deep-extracted #1). |
+| S35 | Safecloud (Medium + own blog) | https://medium.com/@safecloud.co.th/... | 2024 Open qualifier write-up collection (THA). |
+| S36 | Chicken0248 / MaAowHa team (Medium) | https://medium.com/@chaoskist/... | 2024 Open qualifier Reverse/Crypto/Programming + Network/Forensics/Mobile. |
+| S37 | TNI-Cybersec (GitHub + Pages) | https://github.com/TNI-Cybersec/NCSA_Senior_Write_Up | **2021 Senior** write-ups — earliest edition material found. |
+| S38 | ctf.in.th write-up pages 2022–2024 | https://ctf.in.th/write-up/3261/ · /2774/ · /2826/ · /3195/ · /3549/ | Aggregated write-up pages for earlier editions (2022–2024, incl. WTCTT 3549/2826). |
+| S39 | TCTT 2026 qualifier write-up repos (community) | https://github.com/xQuartyx/THCTT26-Senior-Qualifier-Write-up · https://github.com/Kantinan20/TCTT2026-Junior-AllChallenges · https://github.com/emthy0/tctt2026 · https://github.com/LoveMig6334/ctf_tctt2026 · https://github.com/krataia/tctt2026 | Evidence the **15 Aug 2026 qualifier ran** (per ARIT RMUTL announcement); dates still unverified officially. `krataia/tctt2026` likely the operator's own repo — verify before citing. |
+
 ## Dead/irrelevant domains (verified at research time)
 
 | Domain | Status |

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guard Thai CTF Wordplay"
+  short_description: "Preserve ambiguous Thai clues in CTF tasks"
+  default_prompt: "Use $guarding-thai-ctf-wordplay to analyze this Thai CTF clue without collapsing plausible readings."

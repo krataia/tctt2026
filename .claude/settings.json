@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 /home/azureuser/Desktop/tctt/.claude/hooks/session-start-skills.py",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start-skills.py\"",
             "timeout": 15,
             "statusMessage": "Loading TCTT intake skills..."
           }

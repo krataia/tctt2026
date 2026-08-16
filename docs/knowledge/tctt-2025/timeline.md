@@ -17,7 +17,8 @@ Compiled 2026-08-13. Confidence is **high** for the July letter, qualifier, resu
 
 ## TCTT 2026 preview (context)
 
-- **Conflicting / unverified.** A reposted university announcement (ARIT RMUTL, published Mon 3 Aug 2026) gives: **registration 3–12 Aug 2026, online qualifier 15 Aug 2026, onsite final 5 Sep 2026** (venue TBD), teams of 3, three categories, prize pool > 521,000 THB. The official THNCA page (`thnca.or.th`) still lists TCTT 2026 as "Coming Soon". Note the announced 15 Aug 2026 qualifier is 2 days after this KB was compiled. [conflicting]
+- **Conflicting / unverified.** A reposted university announcement (ARIT RMUTL, published Mon 3 Aug 2026) gives: **registration 3–12 Aug 2026, online qualifier 15 Aug 2026, onsite final 5 Sep 2026** (venue TBD), teams of 3, three categories, prize pool > 521,000 THB. The official THNCA page (`thnca.or.th`) still lists TCTT 2026 as "Coming Soon". [conflicting]
+- **New community evidence (2026-08-16 write-up sweep):** multiple public GitHub write-up repos for the **TCTT 2026 qualifier** exist — Senior qualifier (`xQuartyx/THCTT26-Senior-Qualifier-Write-up`), Junior all-challenges (`Kantinan20/TCTT2026-Junior-AllChallenges`), and general workspaces (`emthy0/tctt2026`, `LoveMig6334/ctf_tctt2026`, `krataia/tctt2026`) — consistent with the announced **15 Aug 2026 qualifier having run**. Challenge names visible in repo listings: `goldenring`, `gemini_cryptography` (Senior); `lottery-checker`, `skylink`, `somtam-delivery` (per krataia repo). Dates/venue still not confirmed by any official source. [medium — community corroboration of the ARIT announcement]
 
 ## Known gaps
 

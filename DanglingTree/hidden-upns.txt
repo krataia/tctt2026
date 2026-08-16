@@ -1,2 +1,0 @@
-jake.h@danglingtree.htb
-svc_mail@danglingtree.htb

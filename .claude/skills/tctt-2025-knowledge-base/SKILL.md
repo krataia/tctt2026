@@ -5,7 +5,7 @@ description: Use when a user asks about the Thailand Cyber Top Talent (TCTT) com
 
 # TCTT Knowledge Base Retrieval — Autonomous Full-Drive
 
-Answer questions about the **Thailand Cyber Top Talent (TCTT)** competition from the recorded knowledge base, never from model memory.
+Answer questions about the **Thailand Cyber Top Talent (TCTT)** competition from the recorded knowledge base, never from model memory. A sibling area `../docs/knowledge/tbt-2026/` records the **Thailand Blue Team Community 2026 CTF** (separate event) — route TBT 2026 questions there using the same procedure.
 
 ## Autonomous full-drive contract
 
@@ -39,6 +39,8 @@ Read from `../docs/knowledge/tctt-2025/` (paths relative to this skill file):
 | `past-years.md` | 2021–2024 editions + Women's edition. |
 | `sources.md` | Source registry (S1–S26) with roles and confidence. |
 
+**Sibling area (different event):** `../docs/knowledge/tbt-2026/` — Thailand Blue Team Community 2026 CTF: `README.md` (quick facts), `writeups.md` (Ransomware Ledger DFIR solve, S1), `sources.md` (S1 operator-provided; no official sources yet).
+
 ## Procedure — run straight through, no pauses
 
 1. **Parse** the question into one primary fact-type (decision table below), pick the primary file and any secondary files.
@@ -60,6 +62,16 @@ Read from `../docs/knowledge/tctt-2025/` (paths relative to this skill file):
 | Official pages / sources / which site is live | `sources.md` | `README.md` |
 | What is TCTT / organizers / scale / overview | `overview.md` | `README.md` |
 | Broad "tell me about TCTT 2025" | `README.md` | the 2–3 files matching the question's emphasis |
+
+## Subagent fan-out mode (speed / hard searches)
+
+For broad questions or facts that resist a single-file lookup, fan out read-only subagents in ONE parallel batch instead of sequential reads:
+
+1. **When to fan out:** (a) the question spans ≥2 files in the decision table; (b) the primary-file lookup is inconclusive and alternatives must be checked in parallel; (c) the question demands multi-facet synthesis ("tell me everything about…"); (d) a single read pass already failed to settle a fact.
+2. **How:** spawn one subagent per facet/file (Explore or general-purpose, explicitly read-only: no network, no writes, no target contact), each returning: facts + source id + confidence + caveats. Launch ALL in a single message for maximum concurrency — never wait between spawns.
+3. **Synthesize:** merge per-facet returns in the main flow; keep source IDs and the confidence legend; report gaps plainly. Do not re-read files a subagent already covered.
+4. **Boundary:** subagents share this skill's safety boundary — read-only only. If the answer needs data not in the KB and requires live external research, STOP and ask the operator for authorization; fan-out never expands that boundary, and never fans out onto live targets.
+5. **Scale:** cap the fan-out at the facets that matter (default ≤6 subagents); for a single-file lookup, one subagent is enough — spawning duplicates wastes time.
 
 ## Response format
 

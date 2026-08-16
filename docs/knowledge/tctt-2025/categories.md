@@ -29,6 +29,20 @@ The final was split into two tracks, **Red (offensive)** and **Blue (defensive)*
 
 ## Where to find write-ups
 
+**Full registry (147 write-ups, 2021–2026, all divisions incl. WTCTT): `writeups-registry.md`** — compiled 2026-08-16 by the `tctt-writeup-sweep` swarm workflow; status per row (deep-extracted / listed / dead).
+
+### Verified highlights from the sweep (deep-extracted, 2026-08-16)
+
+- **TCTT 2025 Online-Senior (k1god blog):** "Whispers in the Wire" (network, 200), "Custom Protocol v2" (network, 300) — flag format `flag{...}`, not `TCTT2025{...}`. [medium]
+- **TCTT 2024 Senior qualifier (naruebordhinp, THA ver.):** "Slient Whisper" (network, 100), "Encrypted C2 v2" (network, 200), "EmoBit" (crypto; 😺/😸 → binary) — flag format `THCTT24{MD5}`. [medium]
+- **TCTT 2024 Open qualifier Mobile (monkeydouy):** Easy / Medium / The Face THCTT24 / Click Click (100/200) — same challenge set as Junior (YouSeeMe, Mobile2/3, ClickClick). [medium]
+- **TCTT 2024 Junior Mobile (deekitwiseschu):** YouSeeMe3, Mobile3, TheFaceTHCTT24 (100), Click Click (200) — flag prefix `THCTT24{...}`. [medium]
+- **TCTT 2024 general (north1432):** solved-set WEB1-3, NETWORK1, Forensic4 "Cloudo" (CloudTrail attacker IP), MOBILE1/2/4, REVERSE2 "Embedded Malware", FindQR2 (QR→steghide `THCTT24`). [medium]
+- **TCTT 2024 Forensics (st3llina):** "Evidence" — EWF (E01) disk image, octal-encoded flag. [medium]
+- 2024 qualifier was Jeopardy on **28 Sep 2024** (per notregenxy). [medium]
+
+### Original 2025 shortlist (from first compile)
+
 - Aggregated: `https://ctf.in.th/write-up/4124/` [high]
 - fifafayya (O-Opsifiz): `https://medium.com/@fifafayya/thailand-cyber-top-talent2025-senior-8a9b62d83c19` [medium]
 - pammer434 (d3kc@rt_1) RE/Pwnable: `https://medium.com/@pammer434/thailand-cyber-top-talent-2025-online-senior-ctf-write-up-reverse-engineering-pwnable-b504347c762f` [medium]

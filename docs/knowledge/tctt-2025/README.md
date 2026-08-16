@@ -2,6 +2,8 @@
 
 Snapshot compiled **2026-08-13** from a 7-agent research workflow (6 parallel research facets + 1 cross-check verification pass; ~326 web tool calls, ~400k tokens). Every fact is source-cited and confidence-marked. The verification pass re-checked all critical facts against official sources (official page, NCSA letter PDF, university news, government PDFs).
 
+**Updated 2026-08-16** — `tctt-writeup-sweep` swarm workflow (15 agents, 671 tool calls) added the full write-up registry (147 write-ups, 2021–2026, all divisions incl. WTCTT — see `writeups-registry.md`, sources S27–S39) and new community evidence that the **TCTT 2026 qualifier ran 15 Aug 2026** (per the ARIT RMUTL announcement, now corroborated by public write-up repos — still unverified against official sources).
+
 ## Quick facts (verified)
 
 | Fact | Value |
@@ -21,6 +23,8 @@ Snapshot compiled **2026-08-13** from a 7-agent research workflow (6 parallel re
 | Prize pool | **> 521,000 THB cash** + NCSA certificates; per-level 1st/2nd/3rd breakdowns verified |
 | Champion prize | represent **Thailand at Cyber SEA Game 2025** (held Bangkok 16–17 Oct 2025) |
 | Champion team | "Don't Know Everything" (Senior 1st) — **single self-reported source, UNVERIFIED** |
+| Write-up registry | **147 community write-ups (2021–2026, all divisions incl. WTCTT)** compiled 2026-08-16 by swarm sweep; 8 deep-extracted with challenge details — `writeups-registry.md` |
+| TCTT 2026 qualifier | **Ran 15 Aug 2026 per ARIT RMUTL announcement + community write-up repos (S39)** — dates still unverified against official sources |
 | Contacts | Ms. Chalda Ploysongsri 063-446-9293; Line OA `@THNCA`; FB `THNCAbyNCSA`; `academic@ncsa.or.th` |
 
 ## File map
@@ -33,8 +37,9 @@ Snapshot compiled **2026-08-13** from a 7-agent research workflow (6 parallel re
 | `timeline.md` | Full 2025 date timeline + 2026 preview |
 | `prizes.md` | Prize pool, opportunities, sibling programs, community coverage |
 | `categories.md` | Qualifier categories, final tracks, notable challenges, write-ups |
+| `writeups-registry.md` | **Full write-up registry (147 entries, 2021–2026, all divisions incl. WTCTT)** — compiled 2026-08-16; deep-extracted challenge details for 8 sources |
 | `past-years.md` | 2021–2024 evolution + Women's edition |
-| `sources.md` | Source registry with confidence |
+| `sources.md` | Source registry with confidence (S1–S39) |
 
 ## Confidence legend
 

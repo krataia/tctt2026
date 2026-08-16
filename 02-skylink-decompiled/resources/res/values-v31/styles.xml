@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.TcttSplash" parent="@style/Theme.AppCompat.Light">
-        <item name="android:windowSplashScreenBackground">@color/sky_teal</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/app_icon_art</item>
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/sky_teal</item>
-    </style>
-</resources>
